@@ -10,9 +10,9 @@ app.get('/publish_auth_rtmp', function(req, res) {
     console.log('query', req.query);
     const name = req.query && req.query.name;
     const key = req.query && req.query.key;
-    if (name === 'jiayue' && key === global.playKey) {
+    if (name === 'jiayue' && key === global.publishKey) {
         res.sendStatus(200);
-    } else if (name === 'jiayue1' && key === global.playKey) {
+    } else if (name === 'jiayue1' && key === global.publishKey) {
         res.sendStatus(200);
     } else {
         res.sendStatus(400);
